@@ -1,0 +1,54 @@
+.header-logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.li-place-holder-custom {
+    padding-left: 7px;
+    color: white;
+    font-size: 12px;
+}
+
+.astric {
+    color: red;
+}
+
+.err {
+    border: 1px solid red !important;
+}
+
+#submit {
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+#submit:hover {
+    background: #2737f2;
+}
+
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* For Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Internet Explorer */
+input[type=number] {
+    -ms-appearance: none;
+}
+
+#sidebar-scroll {
+    scrollbar-width: thin;
+}
+
+* {
+    scrollbar-width: thin;
+
+}
