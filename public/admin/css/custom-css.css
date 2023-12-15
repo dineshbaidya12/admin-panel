@@ -52,3 +52,18 @@ input[type=number] {
     scrollbar-width: thin;
 
 }
+
+.select-1-filter,
+.select-2-filter,
+.select-3-filter {
+    width: 250px;
+    display: inline-block;
+}
+
+.select-2-filter {
+    width: 100px;
+}
+
+#show-profile-picture {
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\adminController\AuthController;
+use App\Http\Controllers\adminController\CategoryController;
 use App\Http\Controllers\adminController\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,4 +29,11 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
     Route::get('dashboard', [MainController::class, 'dashboard'])->name('dashboard');
     Route::get('profile', [MainController::class, 'profile'])->name('profile');
     Route::post('profile-update', [MainController::class, 'profileUpdate'])->name('profile-update');
+    // ------------------- Category ------------------- // 
+    Route::get('category', [CategoryController::class, 'category'])->name('category');
+    Route::get('add-category', [CategoryController::class, 'addCategory'])->name('add-category');
+    Route::get('modify-category/{id}', [CategoryController::class, 'modifyCategory'])->name('modify-category');
+    Route::post('delete-category', [CategoryController::class, 'deleteCategory'])->name('delete-category');
+    Route::post('change-category-status', [CategoryController::class, 'changeCategoryStatus'])->name('change-category-status');
+    Route::post('category-action', [CategoryController::class, 'categoryAction'])->name('category-action');
 });

@@ -36,6 +36,16 @@
                   <!-- End::slide -->
 
                   <!-- Start::slide -->
+                  <li class="slide">
+                      <a href="{{ route('category') }}"
+                          class="side-menu__item  {{ request()->routeIs('category') ? 'active' : '' }}">
+                          <i class="ti ti-category"></i>
+                          <span class="side-menu__label">Category</span>
+                      </a>
+                  </li>
+                  <!-- End::slide -->
+
+                  <!-- Start::slide -->
                   {{-- <li
                       class="slide has-sub {{ request()->routeIs('dashboard') || request()->routeIs('products') ? 'open' : '' }}">
                       <a href="javascript:void(0);"

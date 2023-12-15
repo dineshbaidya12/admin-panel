@@ -129,6 +129,10 @@
             document.getElementById('profile-picture').click();
         });
 
+        document.getElementById('show-profile-picture').addEventListener('click', function() {
+            document.getElementById('profile-picture').click();
+        });
+
         function profileChange(input) {
             const profilePicImg = document.getElementById('show-profile-picture');
 
